@@ -1,0 +1,298 @@
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* logo y encabezado */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav a {
+    font-weight: 600;
+    margin-right: 10px;
+}
+nav a:hover {
+    color: #00BF63;
+}
+.header-index {
+    display: flex;
+    min-height: 70px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header {
+
+   display: flex; 
+   align-items: center;
+}
+#logoimage {
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid black;
+
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+
+/* titulo central */
+.head-givenchy {
+    color: aqua;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.imagenlogo1 {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.head-givenchy {
+    color:black;
+}
+.titulo1{
+    margin-top: 50px;
+    padding: 50px;
+
+}
+.titulo-centr{
+    color: #00BF63;
+    font-family: "Bebas Neue", sans-serif;
+
+    
+}
+.fondo-inicio {
+    background-image: url(/assets/img/nikeairforce1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* nosotros */
+.titulo-nosotros {
+    color: #00BF63;
+    font-family: "Bebas Neue", sans-serif;
+
+
+}
+.parrafo-nosotros {
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+
+
+}
+.boton-sabermas {
+    background-color:#00BF63;
+
+}
+
+/* nuestro productos */
+.boton-veraqui {
+    color: white;
+    background-color:#00BF63;
+}
+.boton-veraqui2 {
+    color: white;
+    background-color:#00BF63;
+}
+
+
+/* productos */
+.titulo-nike{
+    color: #00BF63;
+
+}
+.boton-nike{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-adidas{
+    color: #00BF63;
+
+}
+.boton-adidas{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-puma{
+    color: #00BF63;
+
+}
+.boton-puma{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-new{
+    color: #00BF63;
+
+}
+.boton-new{
+    color: white;
+    background-color:#00BF63;
+}
+
+
+
+
+
+/* adidas */
+.titulo-ozmillen {
+    color: #00BF63;
+}
+.boton-ozmillen {
+    color: white;
+    background-color:#00BF63;
+
+}
+
+.titulo-campus {
+    color: #00BF63;
+}
+.boton-campus {
+    color: white;
+    background-color:#00BF63;
+
+}
+
+.titulo-breaknet {
+    color: #00BF63;
+}
+.boton-breaknet {
+    color: white;
+    background-color:#00BF63;
+
+}
+
+.titulo-confort {
+    color: #00BF63;
+}
+.boton-confort {
+    color: white;
+    background-color:#00BF63;
+
+}
+/* nike */
+.titulo-lownext {
+    color: #00BF63;
+
+}
+.boton-lownext {
+    color: white;
+    background-color:#00BF63;
+
+}
+.titulo-courtvision {
+    color: #00BF63;
+
+}
+.boton-courtvision {
+    color: white;
+    background-color:#00BF63;
+
+}
+.titulo-air97 {
+    color: #00BF63;
+
+}
+.boton-air97 {
+    color: white;
+    background-color:#00BF63;
+
+}
+.titulo-maxdia {
+    color: #00BF63;
+
+}
+.boton-maxdia {
+    color: white;
+    background-color:#00BF63;
+
+}
+/* puma */
+.titulo-future{
+    color: #00BF63;
+}
+.boton-future{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-rsx{
+    color: #00BF63;
+}
+.boton-rsx{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-trc{
+    color: #00BF63;
+}
+.boton-trc{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-calidram{
+    color: #00BF63;
+}
+.boton-calidram{
+    color: white;
+    background-color:#00BF63;
+}
+/* newbalance */
+.titulo-574{
+    color: #00BF63;
+}
+.boton-574{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-m574{
+    color: #00BF63;
+}
+.boton-m574{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-fresh{
+    color: #00BF63;
+}
+.boton-fresh{
+    color: white;
+    background-color:#00BF63;
+}
+.titulo-500{
+    color: #00BF63;
+}
+.boton-500{
+    color: white;
+    background-color:#00BF63;
+}
+
+
+
