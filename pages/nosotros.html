@@ -4,44 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIVENCHY</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Tu archivo CSS personalizado -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Estilo para el fondo y espaciado de la sección */
+        .fondo-nosotros {
+            background-color: #f8f9fa; /* Color de fondo */
+            padding: 4rem 0; /* Espaciado interno */
+            text-align: center; /* Alineación centrada del contenido */
+        }
+        
+        /* Estilo para el título */
+        .titulo-nosotros {
+            font-size: 2rem; /* Tamaño de fuente grande */
+            color: #343a40; /* Color de texto oscuro */
+            margin-bottom: 2rem; /* Espaciado inferior */
+        }
+        
+        /* Estilo para el párrafo */
+        .parrafo-nosotros {
+            font-size: 1.2rem; /* Tamaño de fuente */
+            line-height: 1.6; /* Interlineado */
+            color: #6c757d; /* Color de texto gris */
+            margin-bottom: 2rem; /* Espaciado inferior */
+            text-align: justify; /* Justificar el texto */
+            padding: 0 15%; /* Espaciado horizontal */
+        }
+        
+        /* Estilo para el botón */
+        .boton-sabermas {
+            background-color: #007bff; /* Color de fondo azul de Bootstrap */
+            color: #fff; /* Color de texto blanco */
+            border: none; /* Sin borde */
+            padding: 0.75rem 2rem; /* Espaciado interno */
+            font-size: 1rem; /* Tamaño de fuente */
+            text-decoration: none; /* Sin subrayado */
+            transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+        }
+        
+        /* Estilo para el botón cuando se pasa el ratón por encima */
+        .boton-sabermas:hover {
+            background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+            color: #fff; /* Mantener el color de texto blanco */
+            text-decoration: none; /* Mantener sin subrayado */
+        }
+
+        /* Estilo para las imágenes */
+        .img-responsive {
+            max-width: 100%; /* Ajustar el ancho máximo al tamaño del contenedor */
+            height: auto; /* Mantener la proporción de la imagen */
+        }
+    </style>
 </head>
 <body>
-    <!-- encabezado -->
+    <!-- Encabezado -->
     <section>
-        
-        <!-- menu -->
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">INICIO</a> </li>
-                    <li><a href="/pages/nosotros.html">NOSOTROS</a></li>
-                    <li><a href="/pages/nuestroproductos.html">PRODUCTOS</a></li>
-                   <li><a href="/pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
-       
-        
-    </section>
-    <section class="fondo-nosotros">
-        
-        <!--nosotros-->
-          <figure>
-            <img src="/assets/img/logo givenchy/loggivenchy.png" alt="">
-
-          </figure>     
-      
-          <h2 class="titulo-nosotros">
-            ¿Quienes  somos?            
-        </h2>
-
-            <p class="parrafo-nosotros">En nuestra empresa te ofrecemos una enorme variedad de calzados de las marcas NIKE, ADIDAS, PUMA, ETC.</p>
-                   
-
-                    <button class="boton-sabermas"><a href="/pages/contacto.html">saber mas</a></button>
-
+        <!-- Menú de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/nuestroproductos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </div>
+        </nav>
+    </section>
+    
+    <!-- Sección Nosotros -->
+    <section class="fondo-nosotros">
+        <div class="container">
+            <figure>
+                <img src="/assets/img/logo givenchy/loggivenchy.png" alt="Logo Givenchy" class="img-fluid img-responsive">
+            </figure>
+            <h2 class="titulo-nosotros">Bienvenido a Givenchy Calzados</h2>
+            <p class="parrafo-nosotros">
+                Somos una empresa dedicada a ofrecerte una amplia variedad de calzados de las marcas más reconocidas como Nike, Adidas, Puma, entre otras. Nuestro compromiso es proporcionarte productos de alta calidad diseñados para satisfacer tus necesidades tanto de estilo como de rendimiento. En Givenchy Calzados, no solo nos preocupamos por ofrecerte las últimas tendencias en calzado deportivo y casual, sino que también nos esforzamos por brindarte una experiencia de compra excepcional. Nuestro equipo está aquí para asesorarte y ayudarte a encontrar el calzado perfecto que se adapte a tu estilo de vida.
+            </p>
+            <button class="boton-sabermas btn"><a href="/pages/contacto.html" class="text-white">Conoce más sobre nosotros</a></button>
+        </div>
+    </section>
+    
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" integrity="sha384-LQSeBOz2Wl5Bh82PmOaAZfI/3a4pH+JoL+uY7d4h0VvcK+Q5fii3A+5EJv7HKNvE" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+YuLr+VRNI+8w+0jU/Ih8UA0NHp3AiS2w7x" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -28,9 +28,8 @@ nav a {
     font-weight: 600;
     margin-right: 10px;
 }
-nav a:hover {
-    color: #00BF63;
-}
+
+
 .header-index {
     display: flex;
     min-height: 70px;
@@ -58,6 +57,65 @@ nav a:hover {
         padding: 10px 0px;
     }
 }
+.fondoInicio {
+    background-color: #f7f7f7; /* Ejemplo de color de fondo */
+    width: 1360px; /* Ancho específico */
+    height: 768px; /* Altura específica */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    position: relative; /* Establece posición relativa para contenido posicionado */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.logo-header {
+    position: absolute; /* Posición absoluta para fijar en la esquina */
+    top: 20px; /* Distancia desde el borde superior */
+    left: 20px; /* Distancia desde el borde izquierdo */
+    display: flex; /* Usa flexbox para alinear verticalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.logo-header img {
+    max-width: 200px; /* Tamaño máximo para el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.nombre-empresa {
+    font-size: 24px; /* Tamaño de fuente para el nombre de la empresa */
+    margin: 0; /* Elimina los márgenes por defecto */
+    color: #00BF63;
+}
+.nombre-empresa {
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+nav {
+    position: absolute; /* Posición absoluta para la navegación */
+    top: 20px; /* Distancia desde el borde superior */
+    right: 20px; /* Distancia desde el borde derecho */
+}
+
+
+.nav-link {
+    font-size: 18px; /* Tamaño de fuente para los enlaces de navegación */
+    margin-left: 10px; /* Espacio entre los enlaces */
+    color: #333; /* Color de texto para los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+
+.nav-link:hover {
+    color: #00BF63; /* Color del texto al pasar el mouse */
+}
+
+
+
+
+
+
 
 
 /* titulo central */
@@ -67,22 +125,25 @@ nav a:hover {
 
 }
 .imagenlogo1 {
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid black;
 
 }
 
-
+.nombre-empresa {
+    
+}
 
 .head-givenchy {
     color:black;
 }
 .titulo1{
-    margin-top: 50px;
-    padding: 50px;
-
+    text-align: left; /* Centrar a la izquierda */
+    margin-left: 80px; /* Añadir un margen para separar del borde izquierdo */
+    margin-top: 90px;
+    font-family: 'Anton SC', sans-serif;
+    color: #333;
 }
 .titulo-centr{
     color: #00BF63;
@@ -90,12 +151,172 @@ nav a:hover {
 
     
 }
-.fondo-inicio {
-    background-image: url(/assets/img/nikeairforce1.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.fondoInicio {
+    background-image: url('/assets/img/nikeairforce1.jpg'); /* Ruta de tu imagen de fondo */
+            background-size: cover; /* Cubre todo el contenedor */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            height: 500px; /* Altura deseada para tu sección */
+       
+            
+            padding: 0px; /* Padding para separar el contenido */
+            text-align: center; /* Alinea el contenido al centro */
+            color: white; /* Color de texto blanco para contraste */
 }
 /* nosotros */
+
+.fondoInicio {
+    background-color: #f7f7f7; /* Ejemplo de color de fondo */
+    padding: 20px 0; /* Espacio interno superior e inferior */
+}
+
+.container {
+    max-width: 1360px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 20px; /* Espacio interno a los lados */
+}
+
+.header-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Elimina cualquier margen */
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nombre-empresa {
+    font-size: 24px;
+    margin: 0; /* Elimina cualquier margen */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #6e1313;
+    padding: 10px 15px; /* Añade espacio interno a los lados */
+}
+
+.nav-link:hover {
+    color: #00ff2a;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Reduce el padding lateral para dispositivos móviles */
+    }
+
+    .header-index {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-header {
+        margin-bottom: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .nav-link {
+        margin: 0 5px; /* Espacio entre enlaces */
+    }
+}
+/* mism */
+
+#fondo-nosotros {
+    background-color: #f7f7f7;
+    width: 1360px;
+    height: 768px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1360px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 20px; /* Espacio interno a los lados */
+}
+
+.header-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Elimina cualquier margen */
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nombre-empresa {
+    font-size: 24px;
+    margin: 0; /* Elimina cualquier margen */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px; /* Añade espacio interno a los lados */
+}
+
+.nav-link:hover {
+    color: #00BF63;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Reduce el padding lateral para dispositivos móviles */
+    }
+
+    .header-index {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-header {
+        margin-bottom: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .nav-link {
+        margin: 0 5px; /* Espacio entre enlaces */
+    }
+}
+
+
 .titulo-nosotros {
     color: #00BF63;
     font-family: "Bebas Neue", sans-serif;

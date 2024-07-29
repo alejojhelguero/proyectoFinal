@@ -3,43 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productos Adidas</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Tu archivo CSS personalizado -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Estilo para el espaciado entre las secciones de productos */
+        .productos-adidas {
+            margin-top: 3rem; /* Puedes ajustar este valor según el espacio que desees */
+            margin-bottom: 3rem;
+        }
+        
+        /* Estilo para asegurar que todas las imágenes tengan el mismo tamaño */
+        .productos-adidas figure img {
+            height: 300px; /* Altura fija para todas las imágenes */
+            width: auto; /* Ancho automático para mantener la proporción */
+            max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+            display: block; /* Evita espacios vacíos debajo de las imágenes */
+            margin: 0 auto; /* Centra las imágenes horizontalmente */
+        }
+        
+        /* Estilo para el precio con Bootstrap */
+        .precio {
+            font-size: 1.25rem; /* Tamaño de fuente */
+            color: #007bff; /* Color azul de Bootstrap */
+            font-weight: bold; /* Negrita */
+            margin-top: 1rem; /* Espacio superior */
+        }
+    </style>
 </head>
 <body>
-    <section class="fondo-adidas">
-        <div class="adidas-confort">
-            <h3 class="titulo-confort">ADIDAS CONFORT RUNNER</h3>
-            <figure>
-                <img src="/assets/img/caratula adidas/adidas comfort runner.jpg" alt="">
-                <p class="paraffo-confort">$144.000</p>
-                <button class="boton-confort">comprar aqui</button>
-            </figure>
-        </div>
-        <div class="adidas-campus">
-            <h3 class="titulo-campus">ADIDAS CAMPUS</h3>
-            <figure>
-                <img src="/assets/img/caratula adidas/adidas campus mujer.jpg" alt="">
-                <p class="paraffo-campus">$156.000</p>
-                <button class="boton-campus">comprar aqui</button>
-            </figure>
-        </div>
-        <div class="adidas-breaknet">
-            <h3 class="titulo-breaknet">ADIDAS BREAKNET</h3>
-            <figure>
-                    <img src="/assets/img/caratula adidas/adidas breaknet hombre.jpg" alt="">
-                <p class="paraffo-breaknet">$209.000</p>
-                <button class="boton-breaknet">comprar aqui</button>
-            </figure>
-        </div>
-        <div class="adidas-ozmillen">
-            <h3 class="titulo-ozmillen">ADIDAS OZMILLEN</h3>
-            <figure>
-                <img src="/assets/img/caratula adidas/descarga (1).jpg" alt="">
-                <p class="parrafo-ozmillen">$181.000</p>
-                <button class="boton-ozmillen">comprar aqui</button>
-            </figure>
+    <section class="productos-adidas">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="adidas-confort text-center mb-4">
+                        <h3 class="titulo-confort">ADIDAS CONFORT RUNNER</h3>
+                        <figure>
+                            <img src="/assets/img/caratula adidas/adidas comfort runner.jpg" alt="">
+                            <p class="precio">$144.000</p>
+                            <button class="boton-confort btn btn-primary mt-3">Comprar aquí</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="adidas-campus text-center mb-4">
+                        <h3 class="titulo-campus">ADIDAS CAMPUS</h3>
+                        <figure>
+                            <img src="/assets/img/caratula adidas/adidas campus mujer.jpg" alt="">
+                            <p class="precio">$156.000</p>
+                            <button class="boton-campus btn btn-primary mt-3">Comprar aquí</button>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="adidas-breaknet text-center mb-4">
+                        <h3 class="titulo-breaknet">ADIDAS BREAKNET</h3>
+                        <figure>
+                            <img src="/assets/img/caratula adidas/adidas breaknet hombre.jpg" alt="">
+                            <p class="precio">$209.000</p>
+                            <button class="boton-breaknet btn btn-primary mt-3">Comprar aquí</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="adidas-ozmillen text-center mb-4">
+                        <h3 class="titulo-ozmillen">ADIDAS OZMILLEN</h3>
+                        <figure>
+                            <img src="/assets/img/caratula adidas/descarga (1).jpg" alt="">
+                            <p class="precio">$181.000</p>
+                            <button class="boton-ozmillen btn btn-primary mt-3">Comprar aquí</button>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" integrity="sha384-LQSeBOz2Wl5Bh82PmOaAZfI/3a4pH+JoL+uY7d4h0VvcK+Q5fii3A+5EJv7HKNvE" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+YuLr+VRNI+8w+0jU/Ih8UA0NHp3AiS2w7x" crossorigin="anonymous"></script>
 </body>
 </html>

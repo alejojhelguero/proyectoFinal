@@ -3,47 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productos Puma</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Tu archivo CSS personalizado -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Estilo para el espaciado entre las secciones de productos */
+        .productos-puma {
+            margin-top: 3rem; /* Puedes ajustar este valor según el espacio que desees */
+            margin-bottom: 3rem;
+        }
+        
+        /* Estilo para asegurar que todas las imágenes tengan el mismo tamaño */
+        .productos-puma figure img {
+            height: 300px; /* Altura fija para todas las imágenes */
+            width: auto; /* Ancho automático para mantener la proporción */
+            max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+            display: block; /* Evita espacios vacíos debajo de las imágenes */
+            margin: 0 auto; /* Centra las imágenes horizontalmente */
+        }
+        
+        /* Estilo para el precio con Bootstrap */
+        .precio {
+            font-size: 1.25rem; /* Tamaño de fuente */
+            color: #007bff; /* Color azul de Bootstrap */
+            font-weight: bold; /* Negrita */
+            margin-top: 1rem; /* Espacio superior */
+        }
+    </style>
 </head>
 <body>
-    <section class="fondo-puma">
-        <div class="puma-future">
-            <h3 class="titulo-future">Zapatillas Puma Future Rider Play On Unisex
-            </h3>
-            <figure>
-                <img src="/assets/img/caratula puma/PU388973-96-1.jpg" alt="">
-                <p class="paraffo-future">$124.000</p>
-                <button class="boton-future">comprar aqui</button>
-            </figure>
-        </div>
-        <div class="puma-rsx">
-            <h3 class="titulo-rsx">Zapatillas Puma RS-X 3D Sportstyle
-            </h3>
-            <figure>
-                <img src="/assets/img/caratula puma/puma rsx3d.jpg" alt="">
-                <p class="paraffo-rsx">$162.000</p>
-                <button class="boton-rsx">comprar aqui</button>
-            </figure>
-        </div>
-        <div class="puma-trc">
-            <h3 class="titulo-trc">Zapatillas Puma TRC Blaze Sportstyle
-            </h3>
-            <figure>
-                    <img src="/assets/img/caratula puma/puma trc blaze.jpg" alt="">
-                <p class="paraffo-trc">$160.000</p>
-                <button class="boton-trc">comprar aqui</button>
-            </figure>
-        </div>
-        <div class="puma-calidram">
-            <h3 class="titulo-calidram">Zapatillas Puma Cali Dream Lt Mujer
-            </h3>
-            <figure>
-                <img src="/assets/img/caratula puma/puma cali dram mujer.jpg" alt="">
-                <p class="parrafo-calidram">$126.000</p>
-                <button class="boton-calidram">comprar aqui</button>
-            </figure>
+    <section class="productos-puma">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="puma-future text-center mb-4">
+                        <h3 class="titulo-future">Zapatillas Puma Future Rider Play On Unisex</h3>
+                        <figure>
+                            <img src="/assets/img/caratula puma/PU388973-96-1.jpg" alt="">
+                            <p class="precio">$124.000</p>
+                            <button class="boton-future btn btn-primary mt-3">Comprar aquí</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="puma-rsx text-center mb-4">
+                        <h3 class="titulo-rsx">Zapatillas Puma RS-X 3D Sportstyle</h3>
+                        <figure>
+                            <img src="/assets/img/caratula puma/puma rsx3d.jpg" alt="">
+                            <p class="precio">$162.000</p>
+                            <button class="boton-rsx btn btn-primary mt-3">Comprar aquí</button>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="puma-trc text-center mb-4">
+                        <h3 class="titulo-trc">Zapatillas Puma TRC Blaze Sportstyle</h3>
+                        <figure>
+                            <img src="/assets/img/caratula puma/puma trc blaze.jpg" alt="">
+                            <p class="precio">$160.000</p>
+                            <button class="boton-trc btn btn-primary mt-3">Comprar aquí</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="puma-calidram text-center mb-4">
+                        <h3 class="titulo-calidram">Zapatillas Puma Cali Dream Lt Mujer</h3>
+                        <figure>
+                            <img src="/assets/img/caratula puma/puma cali dram mujer.jpg" alt="">
+                            <p class="precio">$126.000</p>
+                            <button class="boton-calidram btn btn-primary mt-3">Comprar aquí</button>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" integrity="sha384-LQSeBOz2Wl5Bh82PmOaAZfI/3a4pH+JoL+uY7d4h0VvcK+Q5fii3A+5EJv7HKNvE" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+YuLr+VRNI+8w+0jU/Ih8UA0NHp3AiS2w7x" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -13,77 +13,213 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ga+Maamli&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ga+Maamli&display=swap" rel="stylesheet">
+  </head>
 <body>
-    <section class="fondo-inicio">
+  <section class="fondoInicio">
+    <div class="container">
         <!-- Header y navegación -->
-        <header class="header-index">
+        <header class="header-index d-flex justify-content-between align-items-center mb-4">
             <div class="logo-header">
-                <img src="assets/img/logo givenchy/loggivenchy.png" alt="" id="logoimage">
+                <img src="assets/img/logo givenchy/loggivenchy.png" alt="" id="logoimage" class="img-fluid">
                 <h2 class="nombre-empresa">GIVENCHY</h2>
             </div>
-            <nav>
-                <a href="/index.html" class="nav-link">INICIO</a>
-                <a href="/pages/nosotros.html" class="nav-link">NOSOTROS</a>
-                <a href="/pages/nuestroproductos.html" class="nav-link">PRODUCTOS</a>
-                <a href="/pages/contacto.html" class="nav-link">CONTACTO</a>
+            <nav class="d-flex align-items-center justify-content-end nav-custom">
+                <a href="#inicio" class="nav-link mx-2">INICIO</a>
+                <a href="#fondo-nosotros" class="nav-link mx-2">NOSOTROS</a>
+                <a href="#productos" class="nav-link mx-2">PRODUCTOS</a>
+                <a href="#contacto" class="nav-link mx-2">CONTACTO</a>
+                <!-- Asegúrate de que el href corresponda al id "fondo-nosotros" -->
             </nav>
+            
+          
         </header>
         <!-- Título central -->
-        <div class="titulo-central">
-            <h1 class="titulo1">Bienvenido a nuestra tienda.</h1>
+        <div class="position-relative">
+          <div class="titulo-esquina text-left position-absolute top-50 start-0 translate-middle-y">
+              <h1 class="titulo1" style="font-size: 3.0em;">Segui i tuoi sogni.</h1>
+          </div>
+      </div>
+      
+    </div>
+</section>
+
+
+
+
+
+<style>
+    @media screen and (min-width: 1360px) and (max-height: 768px) {
+        #fondo-nosotros {
+            /* Aquí puedes definir los estilos específicos para esta resolución */
+            padding-top: 50px; /* Ejemplo: mayor espacio superior */
+            padding-bottom: 50px; /* Ejemplo: mayor espacio inferior */
+            background-color: #f0f0f0; /* Ejemplo: color de fondo */
+        }
+
+        .titulo-nosotros {
+            font-size: 2.5em; /* Ejemplo: tamaño de fuente más grande */
+        }
+
+        .parrafo-nosotros {
+            line-height: 1.6; /* Ejemplo: espacio entre líneas del párrafo */
+        }
+    }
+</style>
+
+<section id="fondo-nosotros" class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Logo en la esquina superior izquierda -->
+            <div class="col-lg-2 mb-4">
+                
+            </div>
+
+            <!-- Contenido de texto y botón -->
+           
+
+            <!-- Tarjetas de productos -->
+            <div class="col-lg-12">
+                <h2 class="mb-4">Nuestros productos destacados</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/img/caratula new balance/nwe balance mujer 500.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">NEW BALANCE 500 BLANCA PLATA MUJER</h5>
+                                <p class="card-text">$99.99</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/img/caratula puma/puma rsx3d.jpg" class="card-img-top" alt="Producto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Zapatillas Puma RS-X 3D Sportstyle</h5>
+                                <p class="card-text">$79.99</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/img/caratula adidas/adidas breaknet hombre.jpg" class="card-img-top" alt="Producto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">ADIDAS BREAKNET</h5>
+                                <p class="card-text">$129.99</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <section id="fondo-nosotros">
-        <!-- Nosotros -->
-        <div>
-            <header>
-                <figure>
-                    <img src="assets/img/logo givenchy/loggivenchy.png" alt="" class="imagenlogo1">
-                </figure>
-            </header>
-            <h2 class="titulo-nosotros">¿Quiénes somos?</h2>
-            <p class="parrafo-nosotros">En nuestra empresa te ofrecemos una enorme variedad de calzados de las marcas NIKE, ADIDAS, PUMA, etc.</p>
-            <button class="btn btn-primary boton-sabermas"><a href="/pages/contacto.html">Saber más</a></button>
-        </div>
-    </section>
-    <section class="fondo-productos">
+    </div>
+</section>
+
+      
+      
+<style>
+    .productos {
+        padding: 50px 0;
+    }
+    .productos h2 {
+        font-family: 'Ga Maamli', sans-serif;
+    }
+    .productos p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .productos img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    @media (min-width: 768px) {
+        .productos h2 {
+            font-size: 2.5rem;
+        }
+    }
+</style>
+</head>
+<body>
+<section id="productos" class="py-5">
+    <div class="container">
         <!-- Nuestros productos -->
-        <div class="productos">
+        <div class="productos text-center">
             <figure>
-                <img src="assets/img/logo givenchy/loggivenchy.png" alt="" class="imagenlogo1">
+                <img src="assets/img/logo givenchy/loggivenchy.png" alt="Givenchy Logo" class="img-fluid">
             </figure>
-            <h2>Nuestros productos</h2>
-            <button class="btn btn-primary boton-veraqui"><a href="pages/nuestroproductos.html">Ver aquí</a></button>
+            <h2>Quienes Somos</h2>
+            <p>Somos apasionados por ofrecerte lo mejor en zapatillas de las marcas más destacadas del mundo. Desde clásicos que nunca pasan de moda hasta las últimas tendencias, cada par en nuestra colección está cuidadosamente seleccionado para ofrecerte estilo y confort sin igual.</p>
+            <p>Nos esforzamos por traerte lo último en diseño y tecnología de calzado, garantizando que cada compra sea una experiencia única. Ya sea que busques un par para entrenar o para complementar tu estilo diario, estamos aquí para ayudarte a encontrar la zapatilla perfecta.</p>
+            <button class="btn btn-primary mt-3"><a href="" class="text-white">Saber Mas</a></button>
         </div>
-    </section>
-    <section>
-        <!-- Marcas -->
-        <div>
-            <h3>NIKE</h3>
-            <img src="assets/img/logo_nike_principal.jpg" alt="" class="imagenlogo1">
-            <button class="btn btn-primary boton-veraqui"><a href="/pages/productos/nike.html">Ver aquí</a></button>
-        </div>
-        <div>
-            <h3>ADIDAS</h3>
-            <img src="assets/img/adidas-logo-black-symbol-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg" alt="" class="imagenlogo1">
-            <button class="btn btn-primary boton-veraqui"><a href="/pages/productos/adidas.html">Ver aquí</a></button>
-        </div>
-        <div>
-            <h3>PUMA</h3>
-            <img src="assets/img/images.png" alt="" class="imagenlogo1">
-            <button class="btn btn-primary boton-veraqui"><a href="/pages/productos/puma.html">Ver aquí</a></button>
-        </div>
-        <div>
-            <h3>NEW BALANCE</h3>
-            <img src="assets/img/new_balance.gif" alt="" class="imagenlogo1">
-            <button class="btn btn-primary boton-veraqui"><a href="/pages/productos/newbalance.html">Ver aquí</a></button>
-        </div>
-    </section>
+    </div>
+</section>
+
+
+    
+    <section id="productos">
+      <!-- Marcas -->
+      <div class="row">
+          <div class="col-md-6">
+              <div class="text-center mb-4">
+                  <h3>NIKE</h3>
+                  <img src="assets/img/logo_nike_principal.jpg" alt="Nike Logo" class="img-fluid" style="height: 210px; width: 310px;">
+                  <br>
+                  <button class="btn btn-primary mt-3" style="background-color: #00BF63;"><a href="/pages/productos/nike.html" class="text-white">Ver aquí</a></button>
+              </div>
+              <div class="text-center">
+                  <h3>ADIDAS</h3>
+                  <img src="assets/img/adidas-logo-black-symbol-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg" alt="Adidas Logo" class="img-fluid" style="height: 210px; width: 310px;">
+                  <br>
+                  <button class="btn btn-primary mt-3" style="background-color: #00BF63;"><a href="/pages/productos/adidas.html" class="text-white">Ver aquí</a></button>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="text-center mb-4">
+                  <h3>PUMA</h3>
+                  <img src="assets/img/images.png" alt="Puma Logo" class="img-fluid" style="height: 210px; width: 310px;">
+                  <br>
+                  <button class="btn btn-primary mt-3" style="background-color: #00BF63;"><a href="/pages/productos/puma.html" class="text-white">Ver aquí</a></button>
+              </div>
+              <div class="text-center">
+                  <h3>NEW BALANCE</h3>
+                  <img src="assets/img/new_balance.gif" alt="New Balance Logo" class="img-fluid" style="height: 210px; width: 310px;">
+                  <br>
+                  <button class="btn btn-primary mt-3" style="background-color: #00BF63;"><a href="/pages/productos/newbalance.html" class="text-white">Ver aquí</a></button>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+  
+  
+  
+  
     <footer>DERECHOS RESERVADOS 2024</footer>
     <!-- Bootstrap JS, Popper.js y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Inicialización del carrusel con intervalo automático
+        document.addEventListener('DOMContentLoaded', function() {
+          var myCarousel = document.getElementById('carouselProductos');
+          var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 5000 // Cambiar cada 5 segundos (5000 milisegundos)
+          });
+        });
+      </script>
 </body>
 </html>
